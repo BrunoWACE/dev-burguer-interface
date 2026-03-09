@@ -1,4 +1,4 @@
-import { CategoriesCarousel } from '../../components/CategoryCarousel';
+import { CategoriesCarousel } from '../../components/CategoriesCarousel';
 import { Banner, Container, Content } from './styles';
 
 export function Home() {
