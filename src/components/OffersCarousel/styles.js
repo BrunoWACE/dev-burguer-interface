@@ -4,6 +4,12 @@ export const Container = styled.div`
   .carousel-item {
     padding-right: 40px;
   }
+  overflow-x: hidden;
+
+  .react-multi-carousel-list {
+    overflow: visible;
+  }
+
   padding-left: 30px;
 `;
 
@@ -14,8 +20,8 @@ export const Title = styled.h2`
   padding-bottom: 12px;
   position: relative;
   text-align: center;
-  margin-bottom: 40px;
-  margin-top: 20px; // analizar depois
+  margin: 70px 0;
+  margin-top: 70px;
 
   &::after {
     content: '';
@@ -25,28 +31,5 @@ export const Title = styled.h2`
     height: 4px;
     background-color: #61a120;
     left: calc(50% - 28px);
-  }
-`;
-
-export const ContainerItems = styled.div`
-  background: url('${(props) => props.imageUrl}');
-  background-position: center;
-  background-size: cover;
-  border-radius: 20px;
-
-  display: flex;
-  align-items: center;
-  padding: 20px 10px;
-  width: 100%;
-  height: 250px;
-
-  p {
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px 30px;
-    border-radius: 30px;
-    font-size: 22.5px;
-    font-weight: bold;
-    margin-top: 50px;
   }
 `;
